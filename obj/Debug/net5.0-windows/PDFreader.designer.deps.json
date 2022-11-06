@@ -1,0 +1,163 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BouncyCastle/1.8.9": {
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.9.0",
+            "fileVersion": "1.8.20343.1"
+          }
+        }
+      },
+      "Cyotek.Drawing.BitmapFont/2.0.4": {
+        "runtime": {
+          "lib/net5.0/Cyotek.Drawing.BitmapFont.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "2.0.4.0"
+          }
+        }
+      },
+      "Ghostscript/9.2.0": {
+        "runtime": {
+          "lib/gsdll32.dll": {
+            "fileVersion": "0.0.0.0"
+          },
+          "lib/gsdll64.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Ghostscript.NET/1.2.3": {
+        "runtime": {
+          "lib/net40/Ghostscript.NET.dll": {
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.3",
+            "fileVersion": "5.5.13.3"
+          }
+        }
+      },
+      "Magick.NET-Q16-AnyCPU/12.2.0": {
+        "dependencies": {
+          "Magick.NET.Core": "12.2.0"
+        },
+        "runtime": {
+          "lib/netstandard21/Magick.NET-Q16-AnyCPU.dll": {
+            "assemblyVersion": "12.2.0.0",
+            "fileVersion": "12.2.0.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm64/native/Magick.Native-Q16-arm64.dll.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/Magick.Native-Q16-x64.dll.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/Magick.Native-Q16-x64.dll.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/Magick.Native-Q16-x64.dll.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/Magick.Native-Q16-arm64.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "7.1.0.50"
+          },
+          "runtimes/win-x64/native/Magick.Native-Q16-x64.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "7.1.0.50"
+          },
+          "runtimes/win-x86/native/Magick.Native-Q16-x86.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "7.1.0.50"
+          }
+        }
+      },
+      "Magick.NET.Core/12.2.0": {
+        "runtime": {
+          "lib/netstandard21/Magick.NET.Core.dll": {
+            "assemblyVersion": "12.2.0.0",
+            "fileVersion": "12.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BouncyCastle/1.8.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "path": "bouncycastle/1.8.9",
+      "hashPath": "bouncycastle.1.8.9.nupkg.sha512"
+    },
+    "Cyotek.Drawing.BitmapFont/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iA6WehGVdMUuNbfsQQDq/Bt+mMd/OqHjiMUtKFLIQd/0pyYh4ehT7FEjTxN9/4OXNKQZsp9bAJgltP2nnswUJg==",
+      "path": "cyotek.drawing.bitmapfont/2.0.4",
+      "hashPath": "cyotek.drawing.bitmapfont.2.0.4.nupkg.sha512"
+    },
+    "Ghostscript/9.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dY51+hi5Eliji5bWj64rXx4ZOJfwkS/kIba+lIellkUT/3cNMpdEGeFKjQDGjKAu36lb/AWio6Zue2Bt7qNcIw==",
+      "path": "ghostscript/9.2.0",
+      "hashPath": "ghostscript.9.2.0.nupkg.sha512"
+    },
+    "Ghostscript.NET/1.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-htQfv5J7ND1ASHumWqJSi9jXJl/RlsZvPzYj2kS4RlYgcPLsJflBAqqPqk21QjY9RAcgOXkSaxxL38rCc8ltsA==",
+      "path": "ghostscript.net/1.2.3",
+      "hashPath": "ghostscript.net.1.2.3.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "path": "itextsharp/5.5.13.3",
+      "hashPath": "itextsharp.5.5.13.3.nupkg.sha512"
+    },
+    "Magick.NET-Q16-AnyCPU/12.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-leYmugW+X4Fy0e4YSKR2aNsnQRdp2dwJogV3XJ1Y0Ca5j00K6laFcytzYxLGWcsi2V0bEuBfC7ko4/wj/3oz5w==",
+      "path": "magick.net-q16-anycpu/12.2.0",
+      "hashPath": "magick.net-q16-anycpu.12.2.0.nupkg.sha512"
+    },
+    "Magick.NET.Core/12.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h9MrLtdyEUHCK9wYKgCK0sqzqHV9LHW0JCTneKVBVZM5JcvyOpkQVRxEsr3a5V5D1g3oQa1nJOPbIvJUaZZzgA==",
+      "path": "magick.net.core/12.2.0",
+      "hashPath": "magick.net.core.12.2.0.nupkg.sha512"
+    }
+  }
+}
