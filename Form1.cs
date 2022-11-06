@@ -19,6 +19,7 @@ namespace PDFreader
         public Form1()
         {
             InitializeComponent();
+            this.MouseWheel += new MouseEventHandler(Scroller);
         }
 
         private void panel1_DragEnter(object sender, DragEventArgs e)
@@ -42,7 +43,7 @@ namespace PDFreader
             pictureBox1.Image = image;
             pictureBox1.Height = image.Height;
 
-            Scroll();
+            Browse();
         }
 
         //прокручиваем скролер
@@ -52,10 +53,29 @@ namespace PDFreader
         }
 
         //подбираем скролер под файл
-        private void Scroll()
+        private void Browse()
         {
             vScrollBar1.Maximum = image.Height;
             vScrollBar1.LargeChange = vScrollBar1.Height;
+        }
+
+        private void Scroller(object sender, MouseEventArgs e)
+        {
+            //сдвиг
+            int shift = 100;
+
+            if(e.Delta > 0)
+            {
+                pictureBox1.Height += shift;
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - (shift/3));
+            }
+            else
+            {
+                pictureBox1.Height -= shift;
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + (shift/3));
+            }
+
+            Browse();
         }
     }
 }
